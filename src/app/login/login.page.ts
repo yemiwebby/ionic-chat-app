@@ -14,9 +14,9 @@ import { CometChat } from "@cometchat-pro/cordova-ionic-chat";
 })
 export class LoginPage implements OnInit {
   public userUID: string;
-  public appID: string = "221712a7cb0c86f";
-  public apiKey: string = "532f45c8053f85b9363245bff1d75c8040ee7115";
-  public appRegion: string = "US";
+  public appID: string = "YOUR_COMETCHAT_APP_ID";
+  public apiKey: string = "YOUR_COMETCHAT_API_KEY";
+  public appRegion: string = "COMETCHAT_REGION";
 
   constructor(
     public navCtrl: NavController,

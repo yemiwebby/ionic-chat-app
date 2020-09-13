@@ -16,11 +16,11 @@ export class PopoverPage {
   constructor(private router: Router, private popOverCtrl: PopoverController) {}
 
   async logout() {
-    console.log("Logout called");
+    console.log("Logging out");
     await this.popOverCtrl.dismiss();
     CometChat.logout().then(
       () => {
-        console.log("Logout completed successfully");
+        console.log("User has been logged out successfully");
         this.router.navigate(["login"]);
       },
       (error) => {
