@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="outerDiv">
+    <div class="imageOuter">
+      <img src="../assets/cometchat_white.png" class="center" />
+    </div>
+    <div class="loginContainer">
+      <ion-item>
+        <ion-label position="floating">Enter UID</ion-label>
+        <ion-input
+          type="text"
+          [(ngModel)]="userUID"
+          class="loginInput"
+        ></ion-input>
+      </ion-item>
+
+      <br />
+      <br />
+      <ion-button
+        expand="full"
+        shape="round"
+        (click)="onSubmit()"
+        class="loginBtn"
+        >Login</ion-button
+      >
+    </div>
+  </div>
+</ion-content>
